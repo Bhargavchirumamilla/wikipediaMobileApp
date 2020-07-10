@@ -31,17 +31,15 @@ public class searchScreen extends TestHarness {
 	@AndroidFindBy(id = "org.wikipedia:id/search_container")
 	@iOSFindBy(id = "need ipa")
 	private MobileElement searchBar;
-	
+
 	@AndroidFindBy(id = "org.wikipedia:id/search_src_text")
 	@iOSFindBy(id = "need ipa")
 	private MobileElement searchBar_text;
-	
+
 	@AndroidFindBy(id = "org.wikipedia:id/secondary_text_input")
 	@iOSFindBy(id = "need ipa")
 	private MobileElement searchBar_dec;
 
-	
-	
 	@AndroidFindBy(id = "org.wikipedia:id/page_list_item_title")
 	@iOSFindBy(id = "need ipa")
 	List<MobileElement> searchDepatment;
@@ -88,21 +86,21 @@ public class searchScreen extends TestHarness {
 	@AndroidFindBy(id = "org.wikipedia:id/secondary_text_input")
 	@iOSFindBy(id = "need ipa")
 	private MobileElement descrption;
-	
+
 	@AndroidFindBy(className = "android.widget.ImageButton")
 	@iOSFindBy(id = "need ipa")
 	private MobileElement back;
-	
+
 	@AndroidFindBy(xpath = "//android.widget.FrameLayout[@content-desc='My lists']/android.widget.ImageView")
 	@iOSFindBy(id = "need ipa")
 	private MobileElement mylist;
-	
+
 	@AndroidFindBy(id = "org.wikipedia:id/item_title")
 	@iOSFindBy(id = "need ipa")
 	private MobileElement savedList;
-	
+
 	public boolean savedList() {
-		//Verify saved item is present
+		// Verify saved item is present
 		savedList.isEnabled();
 		return true;
 	}
@@ -111,15 +109,15 @@ public class searchScreen extends TestHarness {
 		create.click();
 		return true;
 	}
-	
+
 	public boolean back() {
 		back.click();
 		back.click();
 		return true;
 	}
-	
+
 	public boolean mylist() {
-		 mylist.click();
+		mylist.click();
 		return true;
 	}
 
@@ -174,16 +172,23 @@ public class searchScreen extends TestHarness {
 		searchDepatment.get(4).click();
 		return true;
 	}
-	//public static void main(String[] args) {
+
+	// public static void main(String[] args) {
 	public String getCapital() {
+		String capital;
 		RestAssured.baseURI = "https://restcountries.eu";
 		RestAssured.basePath = "rest/v2";
 		RequestSpecification request = RestAssured.given().relaxedHTTPSValidation();
 		Response response = request.log().all().pathParam("name", "india").queryParams("fullText", "true")
 				.get("/name/" + "{name}");
-		response.then().log().all();
+        response.then().log().all();
 		JsonPath jsonPathEvaluator = response.jsonPath();
-		System.out.println(" country related capital----------->" + jsonPathEvaluator.getString("capital"));
-	return jsonPathEvaluator.getString("capital");
+		log.info(" country related capital----------->" + jsonPathEvaluator.getString("capital"));
+		capital = jsonPathEvaluator.getString("capital");
+		capital = capital.replace("[", "").replace("]", "");
+		log.info(" ---- New capital after replace is : " + capital);
+		return capital;
+		
+
 	}
 }

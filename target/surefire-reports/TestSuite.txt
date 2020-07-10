@@ -1,14 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 74.116 sec <<< FAILURE! - in TestSuite
-login(com.halodoc.apps.runner.CucumberTest)  Time elapsed: 37.69 sec  <<< FAILURE!
-cucumber.runtime.CucumberException: org.junit.ComparisonFailure: expected:<[New Delhi]> but was:<[[New Delhi]]>
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at com.halodoc.apps.runner.CucumberTest.login(CucumberTest.java:46)
-Caused by: org.junit.ComparisonFailure: expected:<[New Delhi]> but was:<[[New Delhi]]>
-	at org.junit.Assert.assertEquals(Assert.java:125)
-	at org.junit.Assert.assertEquals(Assert.java:147)
-	at com.halodoc.stepdefination.search.verify_India_capital_is_New_Delhi_in_Search_bar(search.java:52)
-	at ✽.Then Verify India capital is New Delhi in Search bar(WikimediaSearch.feature:11)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 72.08 sec - in TestSuite

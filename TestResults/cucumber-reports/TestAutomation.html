@@ -40,7 +40,6 @@
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
 				<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -54,7 +53,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 10, 2020 08:28:16 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 10, 2020 09:17:33 PM</span>
 				</a>
 			</li>
 			<li>
@@ -80,7 +79,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -141,10 +139,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -156,10 +154,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='83.333%'><span class='strong'>5</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>6</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='16.667%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -171,10 +169,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='93.333%'><span class='strong'>14</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>15</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='6.667%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -188,15 +186,15 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Search Screen</span>
-						<span class='test-time'>Jul 10, 2020 08:28:16 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Jul 10, 2020 09:17:33 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 2s+911ms</span>
+	<span class='duration right label'>0h 0m 3s+340ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Skip and Tap Search</span>
@@ -216,21 +214,21 @@
 			
 			<span class="bdd-step-name">When Tap Search</span>
 			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="/Users/chirumamillabhargav/Downloads/HalodocApps/Screenshots/cucumber.runtime.ScenarioImpl@10876a62020-07-10 20:28:20.494.jpg"><i class='material-icons'>panorama</i></a></li>
+				<li><a data-featherlight="image" href="/Users/chirumamillabhargav/Downloads/HalodocApps/Screenshots/cucumber.runtime.ScenarioImpl@5b2f8ab62020-07-10 21:17:38.467.jpg"><i class='material-icons'>panorama</i></a></li>
 			</ul>
 				<div class='pre'>passed</div>
 			
 		</li>
 	</ul>
 </div>
-<div class='scenariooutline node' test-id='5' status='fail'>
-	<span class='duration right label'>0h 0m 9s+28ms</span>
+<div class='scenariooutline node' test-id='5' status='pass'>
+	<span class='duration right label'>0h 0m 6s+430ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
 		<span class="desc-text">Verify India capital is New Delhi in Search bar  Using API</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='6' class='node scenario fail' status='fail'>
+		<li test-id='6' class='node scenario pass' status='pass'>
 			<div class='category-list'>
 				<span class='category label white-text'>@SanityTest</span>
 			</div>
@@ -244,24 +242,19 @@
 						<span class="bdd-step-name">When Country Name is "India capital"</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='8' class='node then fail' status='fail'><b>Then</b>
+					<li test-id='8' class='node then pass' status='pass'><b>Then</b>
 						<span class="bdd-step-name">Then Verify India capital is New Delhi in Search bar</span>
 						<ul class='screenshots right'>
-							<li><a data-featherlight="image" href="/Users/chirumamillabhargav/Downloads/HalodocApps/screenshotsFailedTests/cucumber.runtime.ScenarioImpl@4684240f2020-07-10 20:28:30.806.jpg"><i class='material-icons'>panorama</i></a></li>
+							<li><a data-featherlight="image" href="/Users/chirumamillabhargav/Downloads/HalodocApps/Screenshots/cucumber.runtime.ScenarioImpl@53f0d09c2020-07-10 21:17:46.072.jpg"><i class='material-icons'>panorama</i></a></li>
 						</ul>
-							<div class='pre'><textarea>org.junit.ComparisonFailure: expected:<[New Delhi]> but was:<[[New Delhi]]>
-	at org.junit.Assert.assertEquals(Assert.java:125)
-	at org.junit.Assert.assertEquals(Assert.java:147)
-	at com.halodoc.stepdefination.search.verify_India_capital_is_New_Delhi_in_Search_bar(search.java:52)
-	at ✽.Then Verify India capital is New Delhi in Search bar(WikimediaSearch.feature:11)
-</textarea></div>
+							<div class='pre'>passed</div>
 					</li>
 				</ul>
 		</li>
 	</ul>
 </div>
 <div class='scenario node' test-id='9' status='pass'>
-	<span class='duration right label'>0h 0m 4s+451ms</span>
+	<span class='duration right label'>0h 0m 4s+516ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Hide</span>
@@ -281,7 +274,7 @@
 			
 			<span class="bdd-step-name">And open 10th item in search result list</span>
 			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="/Users/chirumamillabhargav/Downloads/HalodocApps/Screenshots/cucumber.runtime.ScenarioImpl@25be445f2020-07-10 20:28:36.253.jpg"><i class='material-icons'>panorama</i></a></li>
+				<li><a data-featherlight="image" href="/Users/chirumamillabhargav/Downloads/HalodocApps/Screenshots/cucumber.runtime.ScenarioImpl@5856dbe42020-07-10 21:17:51.671.jpg"><i class='material-icons'>panorama</i></a></li>
 			</ul>
 				<div class='pre'>passed</div>
 			
@@ -289,7 +282,7 @@
 	</ul>
 </div>
 <div class='scenariooutline node' test-id='12' status='pass'>
-	<span class='duration right label'>0h 0m 7s+501ms</span>
+	<span class='duration right label'>0h 0m 6s+625ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
 		<span class="desc-text">In wikipedia app search for string haldoc</span>
@@ -320,7 +313,7 @@
 					<li test-id='17' class='node when pass' status='pass'><b>When</b>
 						<span class="bdd-step-name">When provide Name <"haldocname"></span>
 						<ul class='screenshots right'>
-							<li><a data-featherlight="image" href="/Users/chirumamillabhargav/Downloads/HalodocApps/Screenshots/cucumber.runtime.ScenarioImpl@774290402020-07-10 20:28:45.031.jpg"><i class='material-icons'>panorama</i></a></li>
+							<li><a data-featherlight="image" href="/Users/chirumamillabhargav/Downloads/HalodocApps/Screenshots/cucumber.runtime.ScenarioImpl@70616222020-07-10 21:17:59.548.jpg"><i class='material-icons'>panorama</i></a></li>
 						</ul>
 							<div class='pre'>passed</div>
 					</li>
@@ -329,7 +322,7 @@
 	</ul>
 </div>
 <div class='scenariooutline node' test-id='18' status='pass'>
-	<span class='duration right label'>0h 0m 1s+312ms</span>
+	<span class='duration right label'>0h 0m 2s+62ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
 		<span class="desc-text">In wikipedia app search for string test</span>
@@ -352,7 +345,7 @@
 					<li test-id='21' class='node and pass' status='pass'><b>And</b>
 						<span class="bdd-step-name">And Tap ok</span>
 						<ul class='screenshots right'>
-							<li><a data-featherlight="image" href="/Users/chirumamillabhargav/Downloads/HalodocApps/Screenshots/cucumber.runtime.ScenarioImpl@234c5e412020-07-10 20:28:47.955.jpg"><i class='material-icons'>panorama</i></a></li>
+							<li><a data-featherlight="image" href="/Users/chirumamillabhargav/Downloads/HalodocApps/Screenshots/cucumber.runtime.ScenarioImpl@746c411c2020-07-10 21:18:03.317.jpg"><i class='material-icons'>panorama</i></a></li>
 						</ul>
 							<div class='pre'>passed</div>
 					</li>
@@ -361,7 +354,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='22' status='pass'>
-	<span class='duration right label'>0h 0m 4s+870ms</span>
+	<span class='duration right label'>0h 0m 5s+299ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Open “My Lists” tab and verify the recently saved page.</span>
@@ -389,7 +382,7 @@
 			
 			<span class="bdd-step-name">And verify the recently saved page</span>
 			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="/Users/chirumamillabhargav/Downloads/HalodocApps/Screenshots/cucumber.runtime.ScenarioImpl@36790bec2020-07-10 20:28:53.791.jpg"><i class='material-icons'>panorama</i></a></li>
+				<li><a data-featherlight="image" href="/Users/chirumamillabhargav/Downloads/HalodocApps/Screenshots/cucumber.runtime.ScenarioImpl@51efb7312020-07-10 21:18:09.617.jpg"><i class='material-icons'>panorama</i></a></li>
 			</ul>
 				<div class='pre'>passed</div>
 			
@@ -452,14 +445,13 @@
 					<div class='category-heading'>
 						<span class='category-name'>@SanityTest</span>
 						<span class='category-status right'>
-							<span class='label pass'>2</span>
-							<span class='label fail'>2</span>
+							<span class='label pass'>4</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 2</span>
-							<span class='label red lighten-1 white-text'>Failed: 2</span>
+							<span class='label green accent-4 white-text'>Passed: 4</span>
+							
 							
 						</div>
 					
@@ -474,22 +466,22 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 10, 2020 08:28:16 PM</td>
+										<td>Jul 10, 2020 09:17:33 PM</td>
 										<td class='linked' test-id='1'>Search Screen</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2020 08:28:20 PM</td>
+										<td>Jul 10, 2020 09:17:38 PM</td>
 										<td class='linked' test-id='6'>Search Screen.Verify India capital is New Delhi in Search bar  Using API.Verify India capital is New Delhi in Search bar  Using API</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2020 08:28:36 PM</td>
+										<td>Jul 10, 2020 09:17:51 PM</td>
 										<td class='linked' test-id='13'>Search Screen.In wikipedia app search for string haldoc.In wikipedia app search for string haldoc</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2020 08:28:45 PM</td>
+										<td>Jul 10, 2020 09:17:59 PM</td>
 										<td class='linked' test-id='19'>Search Screen.In wikipedia app search for string test.In wikipedia app search for string test</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -538,14 +530,13 @@
                             <div class='author-heading'>
                                 <span class='author-name'>BhargavChirumamilla</span>
                                 <span class='author-status right'>
-                                        <span class='label pass'>5</span>
-                                        <span class='label fail'>1</span>
+                                        <span class='label pass'>6</span>
 						        </span>
                             </div>
                             <div class='author-content hide'>
                                 <div class='author-status-counts'>
-                                    <span class='label green accent-4 white-text'>Passed: 5</span>
-                                    <span class='label red lighten-1 white-text'>Failed: 1</span>
+                                    <span class='label green accent-4 white-text'>Passed: 6</span>
+                                    
                                     
                                 </div>
 
@@ -560,32 +551,32 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Jul 10, 2020 08:28:16 PM</td>
+                                                <td>Jul 10, 2020 09:17:33 PM</td>
                                                 <td class='linked' test-id='2'>Search Screen.Skip and Tap Search</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                             <tr>
-                                                <td>Jul 10, 2020 08:28:20 PM</td>
+                                                <td>Jul 10, 2020 09:17:38 PM</td>
                                                 <td class='linked' test-id='6'>Search Screen.Verify India capital is New Delhi in Search bar  Using API.Verify India capital is New Delhi in Search bar  Using API</td>
-                                                <td><span class='test-status fail'>fail</span></td>
+                                                <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                             <tr>
-                                                <td>Jul 10, 2020 08:28:30 PM</td>
+                                                <td>Jul 10, 2020 09:17:46 PM</td>
                                                 <td class='linked' test-id='9'>Search Screen.Verify Hide</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                             <tr>
-                                                <td>Jul 10, 2020 08:28:36 PM</td>
+                                                <td>Jul 10, 2020 09:17:51 PM</td>
                                                 <td class='linked' test-id='13'>Search Screen.In wikipedia app search for string haldoc.In wikipedia app search for string haldoc</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                             <tr>
-                                                <td>Jul 10, 2020 08:28:45 PM</td>
+                                                <td>Jul 10, 2020 09:17:59 PM</td>
                                                 <td class='linked' test-id='19'>Search Screen.In wikipedia app search for string test.In wikipedia app search for string test</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                             <tr>
-                                                <td>Jul 10, 2020 08:28:47 PM</td>
+                                                <td>Jul 10, 2020 09:18:03 PM</td>
                                                 <td class='linked' test-id='22'>Search Screen.Open “My Lists” tab and verify the recently saved page.</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
@@ -602,72 +593,6 @@
     <div class='subview-right left'>
         <div class='view-summary'>
             <h5 class='author-name'></h5>
-        </div>
-    </div>
-</div>
-<div id='exception-view' class='view hide'>
-
-    <section id='controls'>
-        <div class='controls grey lighten-4'>
-            <!-- search -->
-            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
-                <a href="#" class='search-div'>
-                    <i class='material-icons'>search</i> Search
-                </a>
-
-                <div class='input-field left hide'>
-                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-                </div>
-
-            </div>
-            <!-- search -->
-        </div>
-    </section>
-
-    <div class='subview-left left'>
-
-        <div class='view-summary'>
-            <h5>Exceptions</h3>
-                <ul id='exception-collection' class='exception-collection'>
-
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>org.junit.ComparisonFailure</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Jul 10, 2020 08:28:22 PM</td>
-                                                        <td class='linked' test-id='8'>Search Screen.Verify India capital is New Delhi in Search bar  Using API.Verify India capital is New Delhi in Search bar  Using API.Then Verify India capital is New Delhi in Search bar</td>
-                                                        <td><pre><textarea>org.junit.ComparisonFailure: expected:<[New Delhi]> but was:<[[New Delhi]]>
-	at org.junit.Assert.assertEquals(Assert.java:125)
-	at org.junit.Assert.assertEquals(Assert.java:147)
-	at com.halodoc.stepdefination.search.verify_India_capital_is_New_Delhi_in_Search_bar(search.java:52)
-	at ✽.Then Verify India capital is New Delhi in Search bar(WikimediaSearch.feature:11)
-</textarea></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                </ul>
-        </div>
-    </div>
-
-    <div class='subview-right left'>
-        <div class='view-summary'>
-            <h5 class='exception-name'></h5>
         </div>
     </div>
 </div>
@@ -698,19 +623,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 10, 2020 08:28:16 PM</div>
+					<div class='panel-lead'>Jul 10, 2020 09:17:33 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 10, 2020 08:28:53 PM</div>
+			 		<div class='panel-lead'>Jul 10, 2020 09:18:09 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>37,765ms</div>
+					<div class='panel-lead'>36,089ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -759,11 +684,11 @@
 						</tr>
 						<tr>
 							<td>@SanityTest</td>
-							<td>2</td>
-							<td>2</td>
+							<td>4</td>
+							<td>0</td>
 							<td>0</td>
 							<td>
-									50%
+									100%
 							</td>
 						</tr>
 					</table>
@@ -779,31 +704,31 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				
-				passChild: 5,
-				failChild: 1,
+				passChild: 6,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 0,
 				
-				passGrandChild: 14,
-				failGrandChild: 1,
+				passGrandChild: 15,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 1,
+				exceptionsGrandChild: 0,
 			};
 		</script>
 		

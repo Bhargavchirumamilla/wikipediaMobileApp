@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 1741968,
+  "duration": 2081906,
   "status": "passed"
 });
 formatter.scenario({
@@ -38,18 +38,18 @@ formatter.match({
   "location": "search.skip_Onboarding()"
 });
 formatter.result({
-  "duration": 478910419,
+  "duration": 700586251,
   "status": "passed"
 });
 formatter.match({
   "location": "search.tap_Search()"
 });
 formatter.result({
-  "duration": 2407803177,
+  "duration": 2613099825,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1424129908,
+  "duration": 1427037881,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -94,7 +94,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 446429,
+  "duration": 428538,
   "status": "passed"
 });
 formatter.scenario({
@@ -134,23 +134,22 @@ formatter.match({
   "location": "search.country_Name_is(String)"
 });
 formatter.result({
-  "duration": 1705269066,
+  "duration": 806011297,
   "status": "passed"
 });
 formatter.match({
   "location": "search.verify_India_capital_is_New_Delhi_in_Search_bar()"
 });
 formatter.result({
-  "duration": 7304411639,
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c[New Delhi]\u003e but was:\u003c[[New Delhi]]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:125)\n\tat org.junit.Assert.assertEquals(Assert.java:147)\n\tat com.halodoc.stepdefination.search.verify_India_capital_is_New_Delhi_in_Search_bar(search.java:52)\n\tat ✽.Then Verify India capital is New Delhi in Search bar(WikimediaSearch.feature:11)\n",
-  "status": "failed"
+  "duration": 5613997625,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 1253116624,
+  "duration": 1153029218,
   "status": "passed"
 });
 formatter.before({
-  "duration": 451488,
+  "duration": 465170,
   "status": "passed"
 });
 formatter.scenario({
@@ -175,18 +174,18 @@ formatter.match({
   "location": "search.scroll()"
 });
 formatter.result({
-  "duration": 2882827547,
+  "duration": 2898602918,
   "status": "passed"
 });
 formatter.match({
   "location": "search.open_th_item_in_search_result_list()"
 });
 formatter.result({
-  "duration": 1563912006,
+  "duration": 1611685288,
   "status": "passed"
 });
 formatter.after({
-  "duration": 994566277,
+  "duration": 1082994939,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -241,7 +240,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 289736,
+  "duration": 390649,
   "status": "passed"
 });
 formatter.scenario({
@@ -282,21 +281,21 @@ formatter.match({
   "location": "search.click_Bookmarks()"
 });
 formatter.result({
-  "duration": 2533029434,
+  "duration": 1140278381,
   "status": "passed"
 });
 formatter.match({
   "location": "search.tap_Save_button()"
 });
 formatter.result({
-  "duration": 1242295948,
+  "duration": 1485975359,
   "status": "passed"
 });
 formatter.match({
   "location": "search.create_New()"
 });
 formatter.result({
-  "duration": 1258870035,
+  "duration": 1228599894,
   "status": "passed"
 });
 formatter.match({
@@ -309,11 +308,11 @@ formatter.match({
   "location": "search.provide_Name(String)"
 });
 formatter.result({
-  "duration": 2458210546,
+  "duration": 2760570823,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1276390589,
+  "duration": 1249505175,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -358,7 +357,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 277483,
+  "duration": 421099,
   "status": "passed"
 });
 formatter.scenario({
@@ -395,22 +394,22 @@ formatter.match({
   "location": "search.description(String)"
 });
 formatter.result({
-  "duration": 729924810,
+  "duration": 777279543,
   "status": "passed"
 });
 formatter.match({
   "location": "search.tap_ok()"
 });
 formatter.result({
-  "duration": 577584622,
+  "duration": 1280418383,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1610547913,
+  "duration": 1705286925,
   "status": "passed"
 });
 formatter.before({
-  "duration": 261977,
+  "duration": 291342,
   "status": "passed"
 });
 formatter.scenario({
@@ -440,25 +439,25 @@ formatter.match({
   "location": "search.user_navigate_to_Home_Page()"
 });
 formatter.result({
-  "duration": 1762161325,
+  "duration": 1800141681,
   "status": "passed"
 });
 formatter.match({
   "location": "search.tap_My_Lists()"
 });
 formatter.result({
-  "duration": 2226732837,
+  "duration": 2643701779,
   "status": "passed"
 });
 formatter.match({
   "location": "search.verify_the_recently_saved_page()"
 });
 formatter.result({
-  "duration": 877572034,
+  "duration": 851696794,
   "status": "passed"
 });
 formatter.after({
-  "duration": 964235972,
+  "duration": 1000829148,
   "status": "passed"
 });
 });

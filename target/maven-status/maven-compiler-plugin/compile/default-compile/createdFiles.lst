@@ -1,0 +1,7 @@
+com/halodoc/apps/launcher/LoadConfigurations.class
+com/halodoc/pageobjects/searchScreen.class
+com/halodoc/apps/runner/CucumberTest.class
+com/halodoc/apps/launcher/TestHarness.class
+com/halodoc/apps/launcher/DeviceWrapper.class
+com/halodoc/apps/config/config.class
+com/halodoc/apps/helper/LoggerHelper.class

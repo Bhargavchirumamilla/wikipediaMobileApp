@@ -52,21 +52,6 @@ public class searchScreen extends TestHarness {
 	@iOSFindBy(id = "need ipa")
 	private MobileElement book;
 
-	public boolean book() {
-		book.click();
-		return true;
-	}
-
-	public boolean save() {
-		try {
-
-			save.click();
-		} catch (Exception ex) {
-
-		}
-		return true;
-	}
-
 	@AndroidFindBy(id = "org.wikipedia:id/onboarding_button")
 	@iOSFindBy(id = "need ipa")
 	private MobileElement save;
@@ -97,16 +82,66 @@ public class searchScreen extends TestHarness {
 
 	@AndroidFindBy(id = "org.wikipedia:id/item_title")
 	@iOSFindBy(id = "need ipa")
-	private MobileElement savedList;
+	List<MobileElement> savedList;
+	
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='haldocname']")
+	@iOSFindBy(id = "need ipa")
+	private MobileElement haldocText;
+	
+	
 
-	public boolean savedList() {
-		// Verify saved item is present
-		savedList.isEnabled();
+	@AndroidFindBy(id = "org.wikipedia:id/item_title")
+	@iOSFindBy(id = "need ipa")
+	private MobileElement savedTitle;
+
+	@AndroidFindBy(id = "org.wikipedia:id/item_description")
+	@iOSFindBy(id = "need ipa")
+	private MobileElement savedDescription;
+
+	public String verify_text_savedTitle() throws InterruptedException {
+		String title;
+		title = haldocText.getAttribute("text").trim();
+		log.info("User found Saved Title text in screen is available : " + title);
+		return title;
+	}
+
+	public String verify_text_savedDescription() throws InterruptedException {
+		String des;
+		des = savedDescription.getAttribute("text").trim();
+		log.info("User found saved Description text in screen is available : " + des);
+		return des;
+	}
+
+	public boolean book() {
+		book.click();
 		return true;
 	}
 
+	public boolean save() {
+		try {
+
+			save.click();
+		} catch (Exception ex) {
+
+		}
+		return true;
+	}
+
+	
+
 	public boolean create() {
 		create.click();
+		return true;
+	}
+
+	/**
+	 * @return
+	 * @throws InterruptedException
+	 * Used Thread Sleep need to change Explicit wait
+	 */
+	public boolean tap_savedListItem() throws InterruptedException {
+		haldocText.click();
+		Thread.sleep(7);
 		return true;
 	}
 
@@ -116,8 +151,9 @@ public class searchScreen extends TestHarness {
 		return true;
 	}
 
-	public boolean mylist() {
+	public boolean mylist() throws InterruptedException {
 		mylist.click();
+		Thread.sleep(2);
 		return true;
 	}
 
@@ -169,7 +205,7 @@ public class searchScreen extends TestHarness {
 	}
 
 	public boolean tap_deaptment() {
-		searchDepatment.get(4).click();
+		searchDepatment.get(3).click();
 		return true;
 	}
 
@@ -181,14 +217,13 @@ public class searchScreen extends TestHarness {
 		RequestSpecification request = RestAssured.given().relaxedHTTPSValidation();
 		Response response = request.log().all().pathParam("name", "india").queryParams("fullText", "true")
 				.get("/name/" + "{name}");
-        response.then().log().all();
+		response.then().log().all();
 		JsonPath jsonPathEvaluator = response.jsonPath();
 		log.info(" country related capital----------->" + jsonPathEvaluator.getString("capital"));
 		capital = jsonPathEvaluator.getString("capital");
 		capital = capital.replace("[", "").replace("]", "");
 		log.info(" ---- New capital after replace is : " + capital);
 		return capital;
-		
 
 	}
 }

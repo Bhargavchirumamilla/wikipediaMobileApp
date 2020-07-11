@@ -28,7 +28,6 @@ public class config {
 
 	private static String conceptURL_API;
 	private static String mobileVersion;
-	// private static AppiumDriver sAppiumDriver = null;
 	private static boolean sIsAppiumRunning = false;
 
 	public static String getExecutionType() {

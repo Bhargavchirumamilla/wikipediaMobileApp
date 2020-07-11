@@ -3,10 +3,8 @@ package com.halodoc.apps.launcher;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import java.net.URL;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -51,7 +49,7 @@ public class DeviceWrapper {
         capability.setCapability(MobileCapabilityType.ACCEPT_SSL_CERTS, true);
 		capability.setCapability("autoWebView", "true");
 		capability.setCapability("INSTALL_GRANT_RUNTIME_PERMISSIONS", "true");
-
+		capability.setCapability(MobileCapabilityType.NO_RESET,"false");
 		capability.setCapability("webContentsDebuggingEnabled", "true");
 		capability.setCapability(MobileCapabilityType.UDID, config.getDeviceUDID());
 
@@ -61,9 +59,7 @@ public class DeviceWrapper {
 		Thread.sleep(3000);
 		androidDriver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:" + config.getPort() + "/wd/hub"),
 				capability);
-		androidDriver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
-		androidDriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		boolean deviceLocked = androidDriver.isDeviceLocked();
+		androidDriver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);		boolean deviceLocked = androidDriver.isDeviceLocked();
 		if (deviceLocked == true) {
 			androidDriver.unlockDevice();
 		}
@@ -84,16 +80,9 @@ public class DeviceWrapper {
 		capability.setCapability(MobileCapabilityType.DEVICE_NAME, config.getIphoneDeviceName());
 		capability.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, config.getImplictwaittime());
 		capability.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12.2");
-		if (config.getCountry().equalsIgnoreCase("AE") || config.getCountry().equalsIgnoreCase("SA")
-				|| config.getCountry().equalsIgnoreCase("BH") || config.getCountry().equalsIgnoreCase("KW")) {
-			capability.setCapability(MobileCapabilityType.APP,
-					System.getProperty("user.dir") + "/apps/iOS/GCC/" + config.getAppFilePath());
-		} else {
-			capability.setCapability(MobileCapabilityType.APP,
-					System.getProperty("user.dir") + "/apps/iOS/India/" + config.getAppFilePath());
-		}
-
-		capability.setCapability(MobileCapabilityType.FULL_RESET, true);
+		capability.setCapability("appActivity", "org.wikipedia.main.MainActivity");
+		capability.setCapability("appPackage", "org.wikipedia");
+        capability.setCapability(MobileCapabilityType.FULL_RESET, true);
 		capability.setCapability(MobileCapabilityType.UDID, config.getDeviceUDID());
 		capability.setCapability("showXcodeLog", "true");
 		capability.setCapability("useNewWDA", "true");
@@ -107,7 +96,7 @@ public class DeviceWrapper {
 		iOSDriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		return iOSDriver;
 	}
-
+	
 	public static void stopAppiumServer() throws InterruptedException {
 
 		log.info("Stoping appium server");

@@ -2,11 +2,13 @@ package com.halodoc.stepdefination;
 
 import org.apache.log4j.Logger;
 import org.junit.Assert;
+import org.testng.asserts.SoftAssert;
 
 import com.halodoc.apps.launcher.TestHarness;
 import com.halodoc.pageobjects.searchScreen;
 import com.halodoc.apps.helper.LoggerHelper;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -14,7 +16,6 @@ import cucumber.api.java.en.When;
 public class search extends TestHarness {
 	private searchScreen search;
 	Logger log = LoggerHelper.getLogger(search.class);
-	
 
 	@When("^Skip Onboarding$")
 	public void skip_Onboarding() throws Throwable {
@@ -29,9 +30,6 @@ public class search extends TestHarness {
 		Assert.assertTrue(search.tap_searchbar());
 	}
 
-
-	
-
 	@When("^Country Name is \"([^\"]*)\"$")
 	public void country_Name_is(String arg1) throws Throwable {
 		search = new searchScreen(testdriver);
@@ -43,13 +41,12 @@ public class search extends TestHarness {
 		search = new searchScreen(testdriver);
 		hidekeyboard();
 		swipeUp_PDP();
-		
 
 	}
-	
+
 	@Then("^Verify India capital is New Delhi in Search bar$")
 	public void verify_India_capital_is_New_Delhi_in_Search_bar() throws Throwable {
-		Assert.assertEquals(search.verify_text_NewDelhi() ,search.getCapital());
+		Assert.assertEquals(search.verify_text_NewDelhi(), search.getCapital());
 	}
 
 	@Then("^open 10th item in search result list$")
@@ -58,7 +55,7 @@ public class search extends TestHarness {
 		Assert.assertTrue(search.tap_deaptment());
 
 	}
-	
+
 	@Then("^Click Bookmarks$")
 	public void click_Bookmarks() throws Throwable {
 		search = new searchScreen(testdriver);
@@ -91,7 +88,7 @@ public class search extends TestHarness {
 	public void tap_ok() throws Throwable {
 		Assert.assertTrue(search.ok());
 	}
-	
+
 	@Given("^user navigate to Home Page$")
 	public void user_navigate_to_Home_Page() throws Throwable {
 		search = new searchScreen(testdriver);
@@ -103,10 +100,17 @@ public class search extends TestHarness {
 		Assert.assertTrue(search.mylist());
 	}
 
-	@Then("^verify the recently saved page$")
-	public void verify_the_recently_saved_page() throws Throwable {
-		Assert.assertTrue(search.savedList());
+	@Then("^Open Save Page$")
+	public void open_Save_Page() throws Throwable {
+		Assert.assertTrue(search.tap_savedListItem());
 	}
-	
+
+	@And("^Verify Name and Description <\"([^\"]*)\"> <\"([^\"]*)\">$")
+	public void verify_Name_and_Description(String arg1, String arg2) throws Throwable {
+		SoftAssert softAssert = new SoftAssert();
+		softAssert.assertEquals(search.verify_text_savedTitle(), arg1, "Saved name  is Mismatched");
+		softAssert.assertEquals(search.verify_text_savedDescription(), arg2, "Saved Description  is Mismatched");
+		softAssert.assertAll();
+	}
 
 }

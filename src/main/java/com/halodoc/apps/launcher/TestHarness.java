@@ -108,10 +108,10 @@ public class TestHarness {
 	public void stopTest(ITestContext context) throws InterruptedException {
 		String reportPath = System.getProperty("user.dir") + "/TestResults/cucumber-reports/" + "TestAutomation.html";
 		log.info("Report Path Location:  " + reportPath);
-
-		DeviceWrapper.stopAppiumServer();
-
 		testdriver.quit();
+        DeviceWrapper.stopAppiumServer();
+
+		
 
 	}
 

@@ -1,45 +1,5 @@
-2020-07-10 21:17:08.000790 INFO  TestHarness:101 - Method called for loading config file.
-2020-07-10 21:17:33.000366 INFO  TestHarness:75 - Setup of Android Test Environment is started
-2020-07-10 21:17:33.000367 INFO  TestHarness:82 - The driver instance is io.appium.java_client.android.AndroidDriver, Capabilities: {INSTALL_GRANT_RUNTIME_PERMISSIONS=true, acceptSslCerts=true, appActivity=org.wikipedia.main.MainActivity, appPackage=org.wikipedia, autoWebView=true, automationName=UiAutomator2, databaseEnabled=false, desired={appPackage=org.wikipedia, autoWebView=true, unhandledPromptBehavior=true, deviceName=Samsung S8, appActivity=org.wikipedia.main.MainActivity, webContentsDebuggingEnabled=true, acceptSslCerts=true, newCommandTimeout=60, INSTALL_GRANT_RUNTIME_PERMISSIONS=true, automationName=UiAutomator2, platformName=android, udid=1dd020ae0205, unexpectedAlertBehaviour=true}, deviceApiLevel=27, deviceManufacturer=Xiaomi, deviceModel=Redmi Note 5, deviceName=1dd020ae0205, deviceScreenDensity=440, deviceScreenSize=1080x2160, deviceUDID=1dd020ae0205, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=60, pixelRatio=2.75, platform=LINUX, platformName=LINUX, platformVersion=8.1.0, statBarHeight=76, takesScreenshot=true, udid=1dd020ae0205, unexpectedAlertBehaviour=true, unhandledPromptBehavior=true, viewportRect={top=76, left=0, width=1080, height=1954}, warnings={}, webContentsDebuggingEnabled=true, webStorageEnabled=false}
-2020-07-10 21:17:33.000721 INFO  ServiceHookss:57 - ************Test Execution started:Skip and Tap Search************
+2020-07-11 15:48:00.000570 INFO  TestHarness:101 - Method called for loading config file.
+2020-07-11 15:48:24.000921 INFO  TestHarness:75 - Setup of Android Test Environment is started
+2020-07-11 15:48:24.000922 INFO  TestHarness:82 - The driver instance is io.appium.java_client.android.AndroidDriver, Capabilities: {INSTALL_GRANT_RUNTIME_PERMISSIONS=true, acceptSslCerts=true, appActivity=org.wikipedia.main.MainActivity, appPackage=org.wikipedia, autoWebView=true, automationName=UiAutomator2, databaseEnabled=false, desired={appPackage=org.wikipedia, noReset=false, autoWebView=true, unhandledPromptBehavior=true, deviceName=Samsung S8, appActivity=org.wikipedia.main.MainActivity, webContentsDebuggingEnabled=true, acceptSslCerts=true, newCommandTimeout=60, INSTALL_GRANT_RUNTIME_PERMISSIONS=true, automationName=UiAutomator2, platformName=android, udid=1dd020ae0205, unexpectedAlertBehaviour=true}, deviceApiLevel=27, deviceManufacturer=Xiaomi, deviceModel=Redmi Note 5, deviceName=1dd020ae0205, deviceScreenDensity=440, deviceScreenSize=1080x2160, deviceUDID=1dd020ae0205, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=60, noReset=false, pixelRatio=2.75, platform=LINUX, platformName=LINUX, platformVersion=8.1.0, statBarHeight=76, takesScreenshot=true, udid=1dd020ae0205, unexpectedAlertBehaviour=true, unhandledPromptBehavior=true, viewportRect={top=76, left=0, width=1080, height=1954}, warnings={}, webContentsDebuggingEnabled=true, webStorageEnabled=false}
+2020-07-11 15:48:25.000235 INFO  ServiceHookss:57 - ************Test Execution started:Skip and Tap Search************
 
-2020-07-10 21:17:38.000467 INFO  ServiceHookss:42 - Skip and Tap Search is Passed
-2020-07-10 21:17:38.000487 INFO  ServiceHookss:47 - Skip and Tap Search ---------->has Passed
-2020-07-10 21:17:38.000488 INFO  ServiceHookss:49 - ************Test Execution completed for Test:Skip and Tap Search************
-
-2020-07-10 21:17:38.000494 INFO  ServiceHookss:57 - ************Test Execution started:Verify India capital is New Delhi in Search bar  Using API************
-
-2020-07-10 21:17:41.000220 INFO  searchScreen:167 - User found text in screen is available : New Delhi
-2020-07-10 21:17:44.000909 INFO  searchScreen:186 -  country related capital----------->[New Delhi]
-2020-07-10 21:17:44.000919 INFO  searchScreen:189 -  ---- New capital after replace is : New Delhi
-2020-07-10 21:17:46.000072 INFO  ServiceHookss:42 - Verify India capital is New Delhi in Search bar  Using API is Passed
-2020-07-10 21:17:46.000073 INFO  ServiceHookss:47 - Verify India capital is New Delhi in Search bar  Using API ---------->has Passed
-2020-07-10 21:17:46.000074 INFO  ServiceHookss:49 - ************Test Execution completed for Test:Verify India capital is New Delhi in Search bar  Using API************
-
-2020-07-10 21:17:46.000074 INFO  ServiceHookss:57 - ************Test Execution started:Verify Hide************
-
-2020-07-10 21:17:48.000973 INFO  TestHarness:172 - Swipe Up completed
-2020-07-10 21:17:50.000344 INFO  TestHarness:172 - Swipe Up completed
-2020-07-10 21:17:51.000671 INFO  ServiceHookss:42 - Verify Hide is Passed
-2020-07-10 21:17:51.000673 INFO  ServiceHookss:47 - Verify Hide ---------->has Passed
-2020-07-10 21:17:51.000673 INFO  ServiceHookss:49 - ************Test Execution completed for Test:Verify Hide************
-
-2020-07-10 21:17:51.000677 INFO  ServiceHookss:57 - ************Test Execution started:In wikipedia app search for string haldoc************
-
-2020-07-10 21:17:59.000548 INFO  ServiceHookss:42 - In wikipedia app search for string haldoc is Passed
-2020-07-10 21:17:59.000549 INFO  ServiceHookss:47 - In wikipedia app search for string haldoc ---------->has Passed
-2020-07-10 21:17:59.000549 INFO  ServiceHookss:49 - ************Test Execution completed for Test:In wikipedia app search for string haldoc************
-
-2020-07-10 21:17:59.000552 INFO  ServiceHookss:57 - ************Test Execution started:In wikipedia app search for string test************
-
-2020-07-10 21:18:03.000316 INFO  ServiceHookss:42 - In wikipedia app search for string test is Passed
-2020-07-10 21:18:03.000318 INFO  ServiceHookss:47 - In wikipedia app search for string test ---------->has Passed
-2020-07-10 21:18:03.000318 INFO  ServiceHookss:49 - ************Test Execution completed for Test:In wikipedia app search for string test************
-
-2020-07-10 21:18:03.000319 INFO  ServiceHookss:57 - ************Test Execution started:Open “My Lists” tab and verify the recently saved page.************
-
-2020-07-10 21:18:09.000617 INFO  ServiceHookss:42 - Open “My Lists” tab and verify the recently saved page. is Passed
-2020-07-10 21:18:09.000618 INFO  ServiceHookss:47 - Open “My Lists” tab and verify the recently saved page. ---------->has Passed
-2020-07-10 21:18:09.000618 INFO  ServiceHookss:49 - ************Test Execution completed for Test:Open “My Lists” tab and verify the recently saved page.************
-
-2020-07-10 21:18:15.000054 INFO  TestHarness:110 - Report Path Location:  /Users/chirumamillabhargav/Downloads/HalodocApps/TestResults/cucumber-reports/TestAutomation.html
